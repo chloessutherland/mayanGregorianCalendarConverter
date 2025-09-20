@@ -8,6 +8,7 @@ class GregorianDate:
 
     # Check if the year is a leap year
     def is_leap_year(self):
+        # Leap year must be divisible by 4. If it's divisible by 100, it can't be divisible by 400
         if self.year % 4 == 0:
             if self.year % 100 == 0 and not self.year % 400 == 0:
                 return False
