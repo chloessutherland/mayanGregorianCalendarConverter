@@ -76,7 +76,7 @@ def get_next_mayan(mayan):
         mayan.tuns = 0
         mayan.katuns = 0
         mayan.baktuns = 0"""
-    # Account for the leap year Julian conversion issue that occurs at March 1, 1 BC (see readme)
+    # Account for the Julian leap year issue that occurs at March 1, 1 BC (see readme)
     if (
         mayan.baktuns == 7
         and mayan.katuns == 17
