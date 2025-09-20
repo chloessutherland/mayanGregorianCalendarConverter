@@ -36,7 +36,7 @@ Algorithm (Brute-force method)
 
 6. Iterate through the days - advance one day at a time in both calendars until the desired date is reached
 
-	a. Update the Gregorian calendar:
+	- Update the Gregorian calendar:
 
 		- If the current day = last day of the month then move to the next month
 
@@ -56,7 +56,7 @@ Algorithm (Brute-force method)
    
    				- If leap year then February = 29 days, else February = 28 days
    
-	b. Update the Maya calendar:
+	- Update the Maya calendar:
 
    		- Kin increments daily (from 0-19)
    
