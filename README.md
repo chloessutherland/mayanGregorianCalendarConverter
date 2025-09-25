@@ -34,7 +34,7 @@ This project demonstrates a complete implementation of a Maya Long Count convert
    
 	- Maya creaton date starts as 0.0.0.0.1
 
-	- Gregorian equivalent date starts as August 12, -3114
+	- Gregorian equivalent date starts as August 11, -3114
 
 6. Iterate through the days - advance one day at a time in both calendars until the desired date is reached
 
@@ -73,4 +73,25 @@ This project demonstrates a complete implementation of a Maya Long Count convert
     	- If baktun = 13 then reset Maya calendar to 0.0.0.0.1
 
 7. Display the result - output the Maya Long Count data in the format [baktuns].[katuns].[tuns].[winals].[kins]
+
+# Algorithm (mathematical method)
+
+1. Read input - Gregorian date to convert
+
+2. Validate the input (see step 2 of the brute-force method algorithm)
+
+3. Initialize the start date - Gregorian date starts as August 11, 3114 BC
+
+4. Calculate the number of days between the start date and the target date:
+
+	- Initialize the counter - total number of days = 0
+
+	- If the start date is the same month as the end date then add the end day minus the start day to the total number of days
+
+	- Else:
+
+		- Iterate through the months of the year, restarting at the beginning of the year if the end is reached:
+
+			- If the current month is after the start date:
   
+   				- Add the number of days in the month of the start date equivalent to the current month (to account for leap years) to the total number of days
