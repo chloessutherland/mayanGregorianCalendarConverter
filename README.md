@@ -1,3 +1,5 @@
+# What this is
+
 The Maya civilization used a calendar system known as the Maya Long Count, which represents the number of days elapsed since the start of the Fourth Creation (August 11, 3114 BC). This program takes a given date as input, calculates the total number of days since that creation date, then converts the result into the Long Count format. In the Long Count format, one baktun equals 144,000 days, one katun equals 7,200 days, one tun equals 360 days, one winal equals 20 days, and one kin equals a single day. The output is displayed in the format: [baktuns].[katuns].[tuns].[winals].[kins]
 
 This program was produced for a class with Southern New Hampshire University. The singular description of the assignment was to plan "an algorithm for an original program," and code and test the program based on the prepared algorithm with the OnlineGDB compiler, which doesn't support external libraries.
@@ -10,7 +12,7 @@ In terms of other challenges, while I was coding the brute-force version, the Ma
 
 This project demonstrates a complete implementation of a Maya Long Count converter, handling both BC and AD dates accurately. It implements multiple approaches--a brute-force method and a more efficient calculation using a count of days, and accounts for historical nuances such as leap years in the Julian calendar. The program highlights challenges in working with dates far in the past and provides a reliable conversion from Gregorian dates to the Maya Long Count system.
 
-Algorithm (Brute-force method)
+## Algorithm (brute-force method)
 
 1. Read Input - Gregorian date to convert
    
