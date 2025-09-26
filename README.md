@@ -95,3 +95,19 @@ This project demonstrates a complete implementation of a Maya Long Count convert
 			- If the current month is after the start date:
   
    				- Add the number of days in the month of the start date equivalent to the current month (to account for leap years) to the total number of days
+  
+	- Add the difference of the number of days in the start month and the actual start day in that month to the total number of days
+
+	- Add the end date day of the month to the total number of days
+
+5. Convert the total number of days found into the Long Count format
+
+	- Find the quotient of the total number of days and 144,000 (baktuns) as a whole number and subtract that amount from the total number of days
+
+	- Find the quotient of the total number of days left and 7,200 (katuns) as a whole number and subtract that amount from the total number of days left
+
+	- Find the quotient of the total number of days left and 360 (tuns) as a whole number and subtract that amount from the total number of days left
+
+	- Find the quotient of the total number of days left and 20 (winals) as a whole number and subtract that amount from the total number of days left
+
+6. Display the result - output the Maya Long Count data in the format [baktuns].[katuns].[tuns].[winals].[number of days left]
